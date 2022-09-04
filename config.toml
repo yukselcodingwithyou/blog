@@ -1,0 +1,105 @@
+baseURL = "http://example.org/"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
+
+# website title
+title = "yukselcoding"
+
+# language code ["en", "zh-CN", "fr", "pl", ...]
+languageCode = "en"
+# language name ["English", "简体中文", "Français", "Polski", ...]
+languageName = "English"
+
+# Author config
+[author]
+  name = "Yuksel Ozdemir"
+  email = "yukselcoding@gmail.com"
+  link = ""
+
+[params]
+  # site default theme ["auto", "light", "dark"]
+  defaultTheme = "auto"
+  gitRepo = ""
+  fingerprint = ""
+  dateFormat = "2006-01-02"
+  title = "Software Developers' Blog"
+  description = "A Blog For Software Developers"
+  images = []
+
+# Menu config
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = "Posts"
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[params.cdn]
+  # CDN data file name, disabled by default
+  # ["jsdelivr.yml"]
+  data = ""
+
+[params.social]
+  [params.social.Github]
+    weight = 0
+    id = "yukselcodingwithyou"
+    prefix = "https://github.com/"
+    title = "Github"
+  [params.social.LinkedIn]
+    weight = 1
+    id = "yuksel-ozdemir"
+    prefix = "https://www.linkedin.com/in/"
+    title = "LinkedIn"
+  [params.social.Twitter]
+    weight = 2
+    id = "yukselcoding"
+    prefix = "https://www.twitter.com/"
+    title = "Twitter"
+  [params.social.Medium]
+    weight = 3
+    id = "@yukselcoding"
+    prefix = "https://www.medium.com/"
+    title = "Medium"
+
+[params.search]
+  enable = true
+  # type of search engine ["lunr", "algolia"]
+  type = "lunr"
+  # max index length of the chunked content
+  contentLength = 4000
+  # placeholder of the search bar
+  placeholder = ""
+  #  max number of results length
+  maxResultLength = 10
+  #  snippet length of the result
+  snippetLength = 30
+  #  HTML tag name of the highlight part in results
+  highlightTag = "em"
+  #  whether to use the absolute URL based on the baseURL in search index
+  absoluteURL = false
+  [params.search.algolia]
+    index = ""
+    appID = ""
+    searchKey = ""
+
+[params.footer]
+    enable = true
+    custom = ""
+    hugo = false
+    copyright = true
+    author = true
+    since = 2022
