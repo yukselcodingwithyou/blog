@@ -5,7 +5,7 @@ date: 2020-03-06T21:29:01+08:00
 lastmod: 2020-03-06T21:29:01+08:00
 draft: false
 author: "Yuksel Ozdemir"
-authorLink: "https://yukselcoding.net"
+authorLink: "https://yukselcodingwithyou.github.io/resume"
 description: "Test Driven Development In Spring-Boot"
 images: []
 resources:
